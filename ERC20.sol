@@ -7,6 +7,7 @@ import "./IERC20Metadata.sol";
 import "./Context.sol";
 
 contract ERC20 is Context, IERC20, IERC20Metadata {
+
     mapping(address => uint256) private _balances;
 
     mapping(address => mapping(address => uint256)) private _allowances;
@@ -179,4 +180,5 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         address to,
         uint256 amount
     ) internal virtual {}
+    
 }
